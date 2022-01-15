@@ -3,6 +3,7 @@ import { fixture, expect } from '@open-wc/testing';
 
 import '../hello-world.js';
 
+// I assume that this is a testing framework for the element, but i am not exactly sure how any of this is evaluated. To the JS docs I go!
 describe('HelloWorld', () => {
   it('has a default title "Hey there" and counter 5', async () => {
     const el = await fixture(html`<hello-world></hello-world>`);

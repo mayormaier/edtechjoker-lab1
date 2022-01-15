@@ -1,6 +1,14 @@
 import { html } from 'lit';
 import '../hello-world.js';
 
+/**
+ * According to Storybook JS Docs:
+ * A story captures the rendered state of a UI component. Developers write multiple stories per component that describe all the “interesting” states a component can support.
+ * 
+ * Summary: This defines the different forms that an object can take when it is rendered on the page
+ * i.e., someone can use the default element state, or they can specify their own title, counter, or "slotted content"
+ */
+
 export default {
   title: 'HelloWorld',
   component: 'hello-world',

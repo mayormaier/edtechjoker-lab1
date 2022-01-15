@@ -18,7 +18,11 @@ Unlike many languages (like Python, Java, and Go), you don't need to download a 
 
 ### VS Code
 
-I use Visual Studio Code to write my JavaScript Code. It is very lightweight bare bones out of the box, but it has a rich extension ecosystem that you can use to increase its functionality. One key extension that you will need when writing and testing vanilla JS is "Live Server". This allows users to start a local web server for their current VS Code project with just one click.
+I use Visual Studio Code to write my JavaScript Code. It is very lightweight bare bones out of the box, but it has a rich extension ecosystem that you can use to increase its functionality.
+
+Head over to [code.visualstudio.com](https://code.visualstudio.com/) to install VS Code. Click on the big blue installation button to download the installer and follow the prompts when running it.
+
+One key extension that you will need when writing and testing vanilla JS is "Live Server". This allows users to start a local web server for their current VS Code project with just one click.
 
 ### Node.js
 
@@ -26,17 +30,27 @@ The next step is to download Node.JS. You want to get the current LTS (Long Term
 
 Node.JS enables you to run server-side JavaScript applications on your machine. Some people think that Node.JS is a JavaScript library or a framework or its own separate language, but **Node.JS is none of those. Node.JS is a runtime for JavaScript.**
 
+After running the installer, check that Node.js was installed properly with `node -v`
+
+![node -v output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/njdfut6p7hnara15c1is.png)
+
 ### npm
 
 Node comes with a package manager for JavaScript called [npm](https://npmjs.com/). npm enables you to use other people's code in your projects without needing to go and write it yourself. Users can find npm packages on the npm registry, then use them in their code by using the Node require() function and defining them in their projects' `package.json` file, creating a dependency. All of this can sound confusing at first, but for now, just know that you can piggyback off of other projects with npm.
 
 To verify that npm was installed correctly when you installed Node.js, you can run `npm -v`
 
+![npm -v output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4vxheujhvs0mzp23ec19.png)
+
 ### Yarn
 
 [Yarn](https://yarnpkg.com) is another package manager for JavaScript. It is very similar to npm as it enables users to reuse code from other developers by helping them register dependencies in their project. It registers dependencies to the `package.json` just like npm.
 
 With newer versions of Node, yarn comes pre-installed and can be installed without much hassle. Simply run `corepack enable`.
+
+After doing this, you can verify that yarn is installed properly with `yarn -v`.
+
+![yarn -v output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kvilukqczym3hsfmtwlo.png)
 
 ## Initializing an open-wc starter project
 

@@ -1,5 +1,5 @@
 /**
- * This is the big guy file that acutally defines the element. The source, if you will.
+ * This is the big guy file that actually defines the element. The source, if you will.
  */
 
 import { html, css, LitElement } from 'lit';
@@ -26,14 +26,14 @@ export class HelloWorld extends LitElement {
     };
   }
 
-  // this says that it is a constructor soooo I assume that it is instantiating the HelloWorld object, but not sure when it is called?
+  // this says that it is a constructor, so I assume that it is instantiating the HelloWorld object, but not sure when it is called? Is that when an element is hydrated?
   constructor() {
     super();
     this.title = 'Hey there';
     this.counter = 5;
   }
   
-  // helper function that keeps track of the current counter value
+  // function that increases the counter property by 1 when the button in the web component is pressed
   __increment() {
     this.counter += 1;
   }
